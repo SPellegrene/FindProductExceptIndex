@@ -2,13 +2,13 @@ import java.util.HashSet;
 
 
 /*
-* My goals is to find the first recurring string within a string.
-*       - I want to achieve a worst case time complexity of O(n). [linear]
-*       - I want to allow duplicates so I will use a Hashset.
-*       - I want to return as soon as the first character achieves a value greater than 1
-* */
+ * My goals is to find the first recurring string within a string.
+ *       - I want to achieve a worst case time complexity of O(n). [linear]
+ *       - I want to allow duplicates so I will use a Hashset.
+ *       - I want to return as soon as the first character achieves a value greater than 1
+ * */
 
-public class RecurringStrings {
+public class RecurringString {
 
     static char iterateString(String str) {
         char[] ch = str.toCharArray(); //convert string to character array
@@ -33,3 +33,4 @@ public class RecurringStrings {
         System.out.println(iterateString(testString2));
     }
 }
+
