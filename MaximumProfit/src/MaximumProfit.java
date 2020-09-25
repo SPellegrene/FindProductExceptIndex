@@ -9,12 +9,12 @@ import java.util.*;
 
 public class MaximumProfit {
 
-    //add to LinkedList to optimize dynamic size and ease of insertion/deletion
+    // add to LinkedList to optimize dynamic size and ease of insertion/deletion
     // order the list
     // find difference between last index and first index
     // return the difference ie. the profit
     static void getMaxProfit(int[] prices) {
-        List<Integer> set = new LinkedList<>(); // tree set will give me increased time complexity and order my prices
+        List<Integer> set = new LinkedList<>();
         for (int p : prices) {
             set.add(p); //add prices to the List
         }
