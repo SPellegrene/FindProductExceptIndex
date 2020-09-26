@@ -9,10 +9,6 @@ import java.util.*;
 
 public class MaximumProfit {
 
-    // add to LinkedList to optimize dynamic size and ease of insertion/deletion
-    // order the list
-    // find difference between last index and first index
-    // return the difference ie. the profit
     static int getMaxProfit(int[] stockPrices) {
 
         if (stockPrices.length < 2) {
@@ -44,12 +40,3 @@ public class MaximumProfit {
         getMaxProfit(stockPrices2);
     }
 }
-
-//        List<Integer> set = new LinkedList<>();
-//        for (int p : prices) {
-//            set.add(p); //add prices to the List
-//        }
-//        Collections.sort(set); //time complexity of O(n) as Collections.sort, when applied to a randomly ordered array, will operate with same efficiency as mergesort.
-//        int last = set.get(set.size()-1);
-//        int first = set.get(0);
-//        System.out.println(last - first); //get profit
